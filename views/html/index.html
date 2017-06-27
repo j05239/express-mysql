@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title>同学会</title>
+    <link rel="shortcut icon" href="public/favicon.ico" />
+    <!-- Bootstrap -->
+    <link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+    <audio id="audio" src="./public/mp3/光阴的故事.mp3">
+        您的浏览器不支持 audio 标签。
+    </audio>
+    <img src="public/images/logo.png">
+    <hr>
+    <img src="public/images/1.jpg" style="width:100%;">
+    <hr>
+    <h3 style="padding-left: 30px;">相聚2017.7.21-2017.7.23</h3>
+    <h6 style="padding-left: 30px;">桂电9314班毕业20年聚会活动调查</h6>
+    <ul style="">
+        <li>住宿:桂林百悦酒店 </li>
+        <li>联系电话:13823215755 </li>
+        <li>联系人:郭逸龙 </li>
+    </ul>
+    <hr>
+    <img src="public/images/2.jpg" style="width:100%;">
+    <hr>
+    <form id="form" method="post" action="/register">
+        <ul style=" list-style-type:none;padding-right: 35px ;">
+            <li>
+                <h3>住宿调查表</h3>
+                <div class="form-group ">
+                    <label>姓名</label>
+                    <input name="name" type="text " class="form-control " placeholder="姓名 ">
+                </div>
+                <div class="form-group">
+                    <label>到达日期</label>
+                    <input name="arrivedate" type="date" value="2017-06-26" class="form-control ">
+                </div>
+                <div class="form-group">
+                    <label>离开日期</label>
+                    <input name="leavedate" type="date" value="2017-06-26" class="form-control ">
+                </div>
+                <div class="form-group ">
+                    <label>电话</label>
+                    <input name="phone" type="text " class="form-control " placeholder="电话 ">
+                </div>
+                <div class="form-group ">
+                    <label>人数</label>
+                    <select name="numberofpeople" class="form-control ">
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                    </select>
+                </div>
+                <div class="form-group ">
+                    <label>房间数</label>
+                    <select name="numberofroom" class="form-control ">
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                    </select>
+                </div>
+                <div class="form-group ">
+                    <label>其他要求</label>
+                    <textarea name="otherRequire" class="form-control " rows="3 " placeholder="其他要求 "></textarea>
+                </div>
+            </li>
+            <li>
+                <h3>行程调查表</h3>
+                <div class="form-group ">
+                    <label>7.21 全天报到，酒店附近集体晚餐</label>
+                    <select name="joinofdinner21" class="form-control " style="width:50%;float:left ">
+                        <option>请选择21日晚餐</option>
+                        <option>参加</option>
+                        <option>不参加</option>
+                    </select>
+                    <div style="width:5%;float:left ">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+                    <select class="form-control " style="width:40%; visibility:hidden">
+                        <option name="numberofdinner21">请选择人数</option>
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                    </select>
+                </div>
+                <div class="form-group ">
+                    <label>7.22 上午参观学校，下午座谈</label>
+                    <select name="joinoflunch22" class="form-control " style="width:50%;float:left ">
+                        <option>请选择22日中餐</option>
+                        <option>参加</option>
+                        <option>不参加</option>
+                    </select>
+                    <div style="width:5%;float:left ">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+                    <select name="numberoflunch22" class="form-control " style="width:40%;  visibility:hidden">
+                        <option>请选择人数</option>
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                    </select>
+                    <br/>
+                    <select name="joinofdinner22" class="form-control " style="width:50%;float:left ">
+                        <option>请选择22日晚餐</option>
+                        <option>参加</option>
+                        <option>不参加</option>
+                    </select>
+                    <div style="width:5%;float:left ">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+                    <select name="numberofdinner22" class="form-control " style="width:40%;  visibility:hidden">
+                        <option>请选择人数</option>
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                    </select>
+                </div>
+                <div class="form-group ">
+                    <label>7.22家属游览计划</label>
+                    <textarea name="planof22" class="form-control " rows="3 " placeholder="其他要求 "></textarea>
+                </div>
+                <div class="form-group ">
+                    <label style="width:100% ">7.23中餐</label>
+                    <select name="joinoflunch23" class="form-control " style="width:50%;float:left ">
+                        <option>请选择23日中餐</option>
+                        <option>参加</option>
+                        <option>不参加</option>
+                    </select>
+                    <div style="width:5%;float:left ">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+                    <select name="numberoflunch23" class="form-control " style="width:40%; visibility:hidden ">
+                        <option>请选择人数</option>
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                    </select>
+                </div>
+            </li>
+            <li>
+                <h3>其它</h3>
+                <div class="form-group ">
+                    <label style="width:100% ">请选择是否邀请老师</label>
+                    <select name="isInviteTeacher" class="form-control " style="width:55%;float:left ">
+                        <option>请选择是否邀请老师</option>
+                        <option>是</option>
+                        <option>否</option>
+                    </select>
+                    <div style="width:5%;float:left ">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+                    <input name="teacherName" type="text " class="form-control " placeholder="拟邀请老师姓名 " style="width:38%; visibility:hidden ">
+                </div>
+                <div class="form-group ">
+                    <label>请选择聚会T恤</label>
+                    <select name="tshirt" class="form-control ">
+                        <option>请选择聚会T恤</option>
+                        <option>S</option>
+                        <option>M</option>
+                        <option>L</option>
+                        <option>XL</option>
+                        <option>XXL</option>
+                        <option>XXXL</option>
+                    </select>
+                </div>
+                <div class="form-group ">
+                    <label>备注</label>
+                    <textarea name="remark" class="form-control " rows="3 " placeholder="备注 "></textarea>
+                </div>
+            </li>
+            <li>
+                <button id="submit" class="btn btn-default ">提交</button>
+            </li>
+        </ul>
+    </form>
+    <hr>
+    <img src="public/images/3.jpg" style="width:100%;">
+    <!-- /container -->
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js "></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js "></script>
+    <script>
+    $('select').change(function() {
+        alert('3');
+        var value = $(this).val();
+        if (value == '是' || value == '参加') {
+            $(this).next().next().css('visibility', 'visible')
+        } else {
+            $(this).next().next().css('visibility', 'hidden')
+        }
+    })
+
+    $('html').one('touchstart', function() {
+        $('#audio')[0].play();
+    });
+    </script>
+</body>
+
+</html>
